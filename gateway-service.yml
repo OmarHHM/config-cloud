@@ -26,4 +26,11 @@ spring:
           uri: http://localhost:8093/
           predicates:
             - Path=/invoices/**
-
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+            - GET
+            - POST
+            - PUT
